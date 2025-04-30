@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Présentation du Projet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="grafana.css" />
+</head>
+<body>
+
+  <!-- Nouvelle section avec image de fond -->
+  <section class="grafana-header">
+    <img src="images/create-a-grafana-dashboard-and-visualization.png" alt="Fond Grafana" class="header-bg" />
+    <div class="header-content">
+      <h1>Mon projet : Visualisation de données avec Grafana</h1>
+      <p>Surveillance et analyse de machines virtuelles via Prometheus et Grafana.</p>
+    </div>
+  </section>
+
+  <main class="main-content">
+    <section class="project-intro">
+     
+      <div class="project-text">
+        <h2>Description du projet</h2>
+        <p>
+          Ce projet vise à mettre en place un système de <strong>supervision</strong> et de <strong>visualisation</strong> des performances des machines virtuelles d’un environnement réseau.
+          Grâce à <strong>Prometheus</strong> pour la collecte des métriques et <strong>Grafana</strong> pour l'affichage, il est possible d’avoir un aperçu clair et temps réel de l’état des infrastructures.
+        </p>
+        <p>
+          Ce système permet d’anticiper les pannes, d'optimiser les ressources et d'améliorer la stabilité globale de l’environnement.
+        </p>
+      </div>
+
+      <h3>Qu’est-ce que Grafana ?</h3>
+<div class="grafana-info">
+  <div class="grafana-text">
+    <p>
+      <strong>Grafana</strong> est une plateforme open-source permettant de créer des <strong>tableaux de bord interactifs</strong> pour visualiser des données métriques, logs ou traces en temps réel.
+    </p>
+    <p>
+      En connectant Grafana à diverses sources de données (comme Prometheus), il devient possible de surveiller l’état d’un système informatique de manière <strong>claire, intuitive et personnalisée</strong>.
+    </p>
+  </div>
+  <div class="grafana-image">
+    <img src="images/Grafana-Schema.png" alt="Schéma Grafana" />
+  </div>
+</div>
+
+<h3>La Partie Prometheus</h3>
+<div class="grafana-info">
+  <div class="grafana-text">
+    <p>
+      <strong>Prometheus</strong> est un système de surveillance open-source conçu pour collecter des métriques provenant de différents services. 
+      Il extrait automatiquement les données à intervalles réguliers et les stocke efficacement pour pouvoir les interroger par la suite.
+    </p>
+    <p>
+      Dans ce projet, Prometheus est utilisé pour récupérer les métriques de performance des machines virtuelles hébergées sur Proxmox, ensuite visualisées sur Grafana.
+    </p>
+  </div>
+  <div class="grafana-image">
+    <img src="images/bandeau-prometheus.svg" alt="Logo Prometheus" />
+  </div>
+</div>
+
+    </section>
+
+    <section class="doc-section">
+      <div class="doc-card">
+        <img src="images/PDF_file_icon.svg.png" alt="Icône PDF" class="doc-icon" />
+        <div class="doc-text">
+          <h3>Documentation complète</h3>
+          <p>Accédez à la documentation du projet : configuration de Grafana, dashboards, collecte des métriques.</p>
+          <a href="docs/Documentation Grafana.pdf" target="_blank" class="doc-button">Voir la documentation</a>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+  <div style="display: flex; justify-content: center; margin: 60px 0;">
+    <a href="../index.html" style="
+      background-color: #2c3e50;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      border: none;
+      display: inline-block;
+    " onmouseover="this.style.backgroundColor='#1a242f'; this.style.transform='translateY(-3px)'"
+       onmouseout="this.style.backgroundColor='#2c3e50'; this.style.transform='translateY(0)'">
+      🏠 Retour à l’accueil
+    </a>
+  </div>
+
+  <footer class="footer">
+    <p>© 2024 Mehdy Maatit. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>

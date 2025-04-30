@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Présentation du Projet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="Terraform.css" />
+</head>
+<body>
+
+  <!-- Nouvelle section avec image de fond -->
+  <section class="terraform-header">
+    <img src="images/banniereterraform.png" alt="Fond Terraform" class="header-bg" />
+    <div class="header-content">
+      <h1>Mon projet : Automatisation avec Terraform</h1>
+      <p>Automatisation du déploiement de machines virtuelles avec Terraform.</p>
+    </div>
+  </section>
+
+  <main class="main-content">
+    <section class="project-intro">
+     
+      <div class="project-text">
+        <h2>Description du projet</h2>
+        <p>
+          Ce projet a été conçu pour faciliter le déploiment de machines virtuelles en vue de construire un environnement réseau.
+          Cet environnement réseau devait servir à réaliser divers test pour les besoins de mon entreprise.
+        </p>
+        <p>
+          Terraform permettra de déployer automatiquement des machines virtuelles sur un environnement Proxmox.
+        </p>
+      </div>
+
+      <h3>Qu’est-ce que Terraform ?</h3>
+<div class="terraform-info">
+  <div class="terraform-text">
+    <p>
+      <strong>Terraform</strong> est un outil d’Infrastructure as Code (IaC) développé par HashiCorp. Il permet d’automatiser le déploiement et la gestion d’infrastructures cloud ou locales à l’aide de fichiers de configuration.
+    </p>
+    <p>
+      Grâce à Terraform, l’infrastructure peut être décrite sous forme de code, ce qui la rend <strong>réplicable, versionnable et maintenable</strong>. Il est particulièrement utile dans les contextes DevOps pour assurer des déploiements cohérents et rapides.
+    </p>
+  </div>
+  <div class="terraform-image">
+    <img src="images/terraform-how-it-works.jpeg" alt="Schéma Terraform" class="" />
+  </div>
+</div>
+
+<h3>La Partie Proxmox</h3>
+<div class="terraform-info">
+  <div class="terraform-text">
+    <p>
+      Dans le cadre de ce projet, j'avais besoin d'une plateforme de virtualisation pour gérer les machines virtuelles <strong>machines virtuelles</strong> servant à construire un environnement de test en réseau. 
+      J'ai choisi <strong>Proxmox</strong> pour sa simplicité et ses nombreuses fonctionalités .Cela a permis un gain de temps considérable et une grande fiabilité dans la création et la suppression de l’infrastructure.
+    </p>
+  </div>
+  <div class="terraform-image">
+    <img src="images/illusatration-proxmox.png" alt="Déploiement de machines virtuelles" />
+  </div>
+</div>
+
+    </section>
+
+  
+
+    <section class="doc-section">
+      <div class="doc-card">
+        <img src="images/PDF_file_icon.svg.png" alt="Icône PDF" class="doc-icon" />
+        <div class="doc-text">
+          <h3>Documentation complète</h3>
+          <p>Accédez à la documentation du projet V-Check : code, schémas, explications détaillées.</p>
+          <a href="docs/Documentation Terraform.pdf" target="_blank" class="doc-button">Voir la documentation</a>
+        </div>
+      </div>
+    </section>
+    
+
+  </main>
+
+
+  <div style="display: flex; justify-content: center; margin: 60px 0;">
+    <a href="../index.html" style="
+      background-color: #2c3e50;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      border: none;
+      display: inline-block;
+    " onmouseover="this.style.backgroundColor='#1a242f'; this.style.transform='translateY(-3px)'"
+       onmouseout="this.style.backgroundColor='#2c3e50'; this.style.transform='translateY(0)'">
+      🏠 Retour à l’accueil
+    </a>
+  </div>
+
+  <footer class="footer">
+    <p>© 2024 Mehdy Maatit. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>

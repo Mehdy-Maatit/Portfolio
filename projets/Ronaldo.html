@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Présentation du Projet V-Check</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="Terraform.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <section class="terraform-header">
+    <img src="images/Capture d'écran 2025-04-16 191525.png" alt="Fond Terraform" class="header-bg" />
+    <div class="header-content">
+      <h1>Mon projet : V-Check</h1>
+      <p>Visualisation des performances réseau en temps réel depuis votre mobile</p>
+    </div>
+  </section>
+
+  <main class="main-content">
+
+    <!-- Intro Projet -->
+    <section class="project-intro">
+      <div class="project-text">
+        <h2>📱 À propos de V-Check</h2>
+        <p>
+          <strong>V-Check</strong> est une application mobile pensée pour les administrateurs système. Elle permet de surveiller l’état des machines virtuelles directement depuis un smartphone, en s’appuyant sur <strong>Prometheus</strong> pour la collecte des métriques.
+        </p>
+        <p>
+          Elle affiche en temps réel l'utilisation du CPU, de la mémoire, du stockage, ainsi que l'état du service DNS. Un outil de diagnostic rapide, accessible n’importe où.
+        </p>
+      </div>
+
+      <!-- Prometheus -->
+      <h3>⚙️ Qu'est-ce que Prometheus ?</h3>
+      <div class="terraform-info">
+        <div class="terraform-text">
+          <p>
+            <strong>Prometheus</strong> est un outil open-source de monitoring. Il permet de collecter, stocker et visualiser des métriques système en temps réel.
+          </p>
+          <p>
+            Dans ce projet, il est utilisé pour remonter les données essentielles des VM : CPU, RAM, stockage et statut DNS.
+          </p>
+        </div>
+        <div class="terraform-image">
+          <img src="images/prometheus-illustration.png" alt="Illustration Prometheus" />
+        </div>
+      </div>
+
+    
+
+    <!-- Proxmox -->
+    <section class="proxmox-section">
+      <h2>🖥️ Qu’est-ce que Proxmox ?</h2>
+      <div class="proxmox-content">
+        <p>
+          <strong>Proxmox VE</strong> est une plateforme open-source de virtualisation. Elle permet de créer et de gérer des machines virtuelles et des conteneurs via une interface web intuitive.
+        </p>
+        <div class="terraform-image">
+          <img src="images/illusatration-proxmox.png" alt="Illustration Proxmox" />
+        </div>
+        <p>
+          Elle repose sur les technologies <strong>KVM</strong> et <strong>LXC</strong>, et se distingue par sa facilité de déploiement, la gestion centralisée des ressources, et des fonctionnalités comme la haute disponibilité ou les snapshots.
+        </p>
+      </div>
+    </section>
+
+    <!-- Documentation PDF -->
+    <section class="doc-section">
+      <div class="doc-card">
+        <img src="images/PDF_file_icon.svg.png" alt="Icône PDF" class="doc-icon" />
+        <div class="doc-text">
+          <h3>Documentation complète</h3>
+          <p>Consultez l'intégralité du projet : code, architecture, et explications techniques.</p>
+          <a href="docs/Documentation V-Check.pdf" target="_blank" class="doc-button">Voir la documentation</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div style="display: flex; justify-content: center; margin: 60px 0;">
+    <a href="../index.html" style="
+      background-color: #2c3e50;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      border: none;
+      display: inline-block;
+    " onmouseover="this.style.backgroundColor='#1a242f'; this.style.transform='translateY(-3px)'"
+       onmouseout="this.style.backgroundColor='#2c3e50'; this.style.transform='translateY(0)'">
+      🏠 Retour à l’accueil
+    </a>
+  </div>
+  
+  
+  
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2024 Mehdy Maatit. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
