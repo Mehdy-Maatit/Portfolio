@@ -188,3 +188,13 @@ h3 {
 }
 
 /* Bouton Retour à l'accueil */
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
