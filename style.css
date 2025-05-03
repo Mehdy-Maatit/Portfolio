@@ -4,10 +4,14 @@ html {
 
 /* Général */
 body {
+    text-align: left; /* Texte aligné à gauche globalement */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    background-color: #fff;
     color: #333;
-}
+  }
 
 h1, h2 {
     margin: 0;
@@ -206,7 +210,7 @@ header {
 /* Section Styles */
 main {
     padding: 60px 20px;
-    text-align: center;
+   
 }
 
 h2{
@@ -474,6 +478,7 @@ h2{
     
 }
 
+
 #skills h2 {
     text-align: center;
     font-size: 2rem;
@@ -510,6 +515,7 @@ h2{
     filter: grayscale(0%);
     
 }
+
 
 
 
@@ -787,7 +793,7 @@ header {
 /* Section Styles */
 main {
     padding: 60px 20px;
-    text-align: center;
+    
 }
 
 h2{
@@ -1080,7 +1086,18 @@ h2{
 main h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    
+
 }
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap; /* Les cartes vont à la ligne si besoin */
+    justify-content: center; /* ✅ Centre horizontalement */
+    gap: 20px;
+    padding: 20px;
+}
+
 
 .project-card {
     display: inline-block;
@@ -1089,13 +1106,13 @@ main h2 {
     border: 1px solid #ccc;
     border-radius: 10px;
     width: 300px;
-    text-align: left;
+    text-align: center;
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     text-decoration: none;
-
+   
 }
 
 .project-card h3,
@@ -1142,17 +1159,57 @@ footer a {
 
 }
 
-/* Liens dans la section veille technologique */
-#veille a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    border-bottom: 2px solid transparent;
-}
 
-#veille a:hover {
-    color: #0056b3;
-    border-bottom: 2px solid #007bff;
-    text-shadow: 0 0 2px rgba(0, 123, 255, 0.3);
-}
+
+/* Cartes pour les articles de veille technologique */
+
+.veille-section {
+    padding: 40px;
+    background-color: #ffffff;
+  }
+  
+  .veille-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .veille-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .veille-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s;
+  }
+  
+  .veille-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .veille-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .veille-card-content {
+    padding: 15px;
+  }
+  
+  .veille-card-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .veille-card-content p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
